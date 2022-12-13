@@ -1,5 +1,11 @@
 /*work*/
 
+.work {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .work__list {
   display: flex;
   justify-content: space-between;
@@ -38,3 +44,4 @@
   text-align: center;
   padding-top: 27px;
 }
+
