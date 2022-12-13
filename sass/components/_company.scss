@@ -1,0 +1,38 @@
+/*company*/
+
+.company__title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: #212121;
+}
+
+.company__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $p-color;
+  border-radius: 4px;
+  color: $p-color;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.company__icon {
+  fill: currentColor;
+}

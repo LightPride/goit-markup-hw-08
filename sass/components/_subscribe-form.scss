@@ -1,0 +1,71 @@
+.subscribe-form {
+  display: flex;
+  align-items: flex-end;
+  width: 570px;
+
+}
+
+.subscribe-form__field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+
+}
+
+.subscribe-form__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+.subscribe-form__input {
+  padding-left: 16px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: inherit;
+  color: $second-background-color;
+  outline: none;
+}
+
+
+.subscribe-form__button {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 10px 28px 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $primary-color;
+  border: none;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $primary-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+
+.subscribe-form__icon {
+  fill: $primary-color;
+  margin-left: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .subscribe-form__button:hover & {
+    fill: $accent-color;
+  }
+
+}

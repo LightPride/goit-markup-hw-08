@@ -1,0 +1,38 @@
+/*fitler*/
+
+.filter {
+  padding: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter__button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: $secondary-color;
+  background-color: $second-background-color;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.item .filter__button:first-child {
+  padding: 6px 25px;
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}

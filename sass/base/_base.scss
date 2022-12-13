@@ -1,0 +1,55 @@
+@import "../utils/vars";
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: #212121;
+  background-color: $primary-color;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.hero__container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 0px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $primary-color;
+}
+
+.list-none {
+  list-style-type: none;
+}
