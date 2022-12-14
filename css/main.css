@@ -46,7 +46,6 @@ img {
 }
 
 .hero__container {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0px;
@@ -58,6 +57,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
+    width: inherit;
+    max-width: 1600px;
     padding: 200px 0px;
   }
 }
@@ -94,6 +95,14 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.menu-toggle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
 }
 
 .site-nav__list {
@@ -562,6 +571,11 @@ img {
   color: #212121;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .ideology__subtitle {
+    text-align: inherit;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .ideology__list {
@@ -569,9 +583,6 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
-}
-.ideology__item {
-  width: 100%;
 }
 .ideology__item:not(:last-child) {
   margin-bottom: 30px;
@@ -804,7 +815,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  margin: -15px;
 }
 @media screen and (min-width: 1200px) {
   .company__list {
@@ -819,6 +830,11 @@ img {
   }
 }
 
+.company__item {
+  width: calc((100% - 60px) / 2);
+  margin: 15px;
+}
+
 .company__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -829,7 +845,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
   height: 92px;
   margin-right: 0;
   border: 1px solid #afb1b8;
@@ -1039,12 +1054,14 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+    text-align: inherit;
   }
 }
 
@@ -1092,12 +1109,13 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscribe-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
     width: 570px;
   }
 }

@@ -51,8 +51,9 @@
   text-align: center;
 
   @media screen and (min-width: 1200px){
-    display: flex;
     align-items: baseline;
+    flex-direction: inherit;
+    text-align: inherit;
   }
   
 }

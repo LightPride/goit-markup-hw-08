@@ -28,6 +28,9 @@
   text-align: center;
   color: $secondary-color;
   margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    text-align: inherit;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -38,7 +41,6 @@
 
 
 .ideology__item {
-  width: 100%;
 
   &:not(:last-child) {
     margin-bottom: 30px;
