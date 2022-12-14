@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 450px;
   @media screen and (min-width: 1200px){
     align-items: flex-end;
     flex-direction: inherit;
@@ -11,10 +10,9 @@
 }
 
 .subscribe-form__field {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-right: 12px;
+  width: 100%;
 
 }
 
@@ -26,6 +24,7 @@
   text-transform: uppercase;
   color: $primary-color;
   margin-bottom: 20px;
+  
 }
 
 .subscribe-form__input {
@@ -36,6 +35,7 @@
   background-color: inherit;
   color: $second-background-color;
   outline: none;
+  
 }
 
 
