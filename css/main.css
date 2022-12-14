@@ -571,7 +571,7 @@ img {
   }
 }
 .ideology__item {
-  width: 450px;
+  width: 100%;
 }
 .ideology__item:not(:last-child) {
   margin-bottom: 30px;
@@ -588,7 +588,7 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 0;
-  width: 450px;
+  width: 100%;
   margin-right: 30px;
 }
 
