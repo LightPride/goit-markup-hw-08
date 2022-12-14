@@ -26,7 +26,8 @@ img {
 }
 
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px 15px;
 
   @media screen and (min-width: 480px) {
@@ -44,21 +45,29 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0px;
+  padding: 118px 0px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $primary-color;
+  @media screen and (min-width: 1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-none {
   list-style-type: none;
 }
+

@@ -10,9 +10,11 @@
 }
 
 .adress__item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
   margin-bottom: 9px;
+  }
 }
-
 .adress__map {
   text-decoration: none;
   font-style: normal;
@@ -45,17 +47,33 @@
 
 .flex-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+    align-items: baseline;
+  }
+  
 }
 
 .footer__div {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px){
+    margin-right: 70px;
+    margin-bottom: 0px;
+
+  }
+  
 }
 
 .soc-container {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
   margin-right: 93px;
+  margin-bottom: 0px;
+  }
 }
-
 .soc-container__title {
   font-size: 14px;
   line-height: 16px;
@@ -63,4 +81,5 @@
   text-transform: uppercase;
   color: $primary-color;
   margin-bottom: 20px;
+  
 }

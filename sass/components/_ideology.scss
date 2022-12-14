@@ -1,8 +1,10 @@
 /*ideology*/
-
-.ideology {
-  padding-bottom: 0px;
+@media screen and (min-width: 1200px){
+  .ideology {
+      padding-bottom: 0px;
+    }
 }
+
 
 .ideology__title {
   position: absolute;
@@ -23,19 +25,28 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: $secondary-color;
   margin-bottom: 10px;
 }
 
-.ideology__list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .ideology__list {
+      display: flex;
+    }
 }
 
+
 .ideology__item {
-  width: 270px;
+  width: 450px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+        margin-right: 30px;
+      }
   }
 }
 
@@ -45,7 +56,7 @@
   letter-spacing: 0.03em;
   color: $contrast-color;
   margin-bottom: 0;
-  width: 270px;
+  width: 450px;
   margin-right: 30px;
 }
 
