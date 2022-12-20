@@ -10,6 +10,10 @@
     font-size: 26px;
       line-height: 1.19;
   }
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+}
 }
 
 .footer__logo {

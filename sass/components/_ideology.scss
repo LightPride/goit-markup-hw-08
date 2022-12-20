@@ -28,7 +28,7 @@
   text-align: center;
   color: $secondary-color;
   margin-bottom: 10px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     text-align: inherit;
   }
 }
@@ -36,7 +36,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px -15px 0px -15px;
+    margin: -15px -15px -15px -15px;
    }
      @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
